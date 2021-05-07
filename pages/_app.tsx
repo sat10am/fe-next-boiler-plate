@@ -1,15 +1,15 @@
 import { Global } from '@emotion/react';
 import baseCSS from 'styles/baseCSS';
 
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps /*, AppContext */ } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Global styles={[baseCSS]} />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -24,4 +24,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 //   return { ...appProps }
 // }
 
-export default MyApp
+export default MyApp;
