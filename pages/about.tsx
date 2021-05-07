@@ -13,7 +13,7 @@ export default function AboutPage() {
 };
 
 
-const Title = styled.div`
+const Title = styled.h1`
   color: tomato;
   font-size: 42px;
 `;
